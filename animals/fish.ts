@@ -1,4 +1,7 @@
-class Fish extends Animal{
+import { Animal } from "./animal";
+
+
+export class Fish extends Animal{
 
     lowestDepth: number; 
 
@@ -9,6 +12,11 @@ class Fish extends Animal{
 
     getLowestDepth(){
         return this.lowestDepth;
+    }
+
+    printAnimal(){
+        super.printAnimal()
+        console.log("the duration of pregnancy is: " + this.lowestDepth)
     }
 
 }
