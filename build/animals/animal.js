@@ -12,5 +12,14 @@ class Animal {
         console.log(this.name + "is a kind of: " + this.species + "it eats: ");
         this.food.printFood();
     }
+    getAnimalFoodType() {
+        return this.food.getFoodType();
+    }
+    getAnimalFoodAmount() {
+        return this.food.getFoodAmount();
+    }
+    eat() {
+        this.food.setFoodAmount(this.food.getFoodAmount() * -1);
+    }
 }
 exports.Animal = Animal;

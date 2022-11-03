@@ -9,5 +9,14 @@ class Food {
     printFood() {
         console.log(this.foodType + " the amount in grams: " + this.foodAmount);
     }
+    getFoodType() {
+        return this.foodType;
+    }
+    getFoodAmount() {
+        return this.foodAmount;
+    }
+    setFoodAmount(amount) {
+        this.foodAmount += amount;
+    }
 }
 exports.Food = Food;
