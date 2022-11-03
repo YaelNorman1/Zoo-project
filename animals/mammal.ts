@@ -1,4 +1,6 @@
-class Mammal extends Animal{
+import { Animal } from "./animal";
+
+export class Mammal extends Animal{
 
     durationPregnency: number; 
 
@@ -9,6 +11,11 @@ class Mammal extends Animal{
 
     getDurationPregnency(){
         return this.durationPregnency;
+    }
+
+    printAnimal(){
+        super.printAnimal()
+        console.log("the duration of pregnancy is: " + this.durationPregnency + " monthes")
     }
 
 }
